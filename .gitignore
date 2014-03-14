@@ -14,3 +14,10 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/.SyncArchive
+
+#Ignore Bit Sync files
+/.DS_Store
+
+/.SyncID
+/.SyncIgnore

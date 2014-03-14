@@ -6,3 +6,11 @@
 	<strong>Text:</strong>
 	<%= @post.text %>
 </p>
+
+<h2>Comments</h2>
+<%= render @post.comments %>
+
+<%= render "shared/comment_form" %>
+
+<%= link_to 'Back To Posts', posts_path %> 
+| <%= link_to 'Edit Posts', edit_post_path(@post) %>
