@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.2'
+gem 'rails', '~> 4.0.3'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -43,6 +43,11 @@ end
 group :test do
   gem 'faker'
   gem 'capybara-webkit'
+end
+
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
 end
 
 # Use ActiveModel has_secure_password
